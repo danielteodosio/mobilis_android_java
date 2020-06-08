@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/showPlayerControls"
+        android:icon="@drawable/action_playback"
+        app:showAsAction="always"
+        android:title="@string/action_playback"/>
+    
+    <item 
+        android:id="@+id/menu_post_response"
+        android:icon="@drawable/action_reply" 
+        app:showAsAction="always" 
+        android:title="@string/action_reply"/>
+    
+    <item 
+        android:id="@+id/menu_post_delete"
+        android:icon="@drawable/abc_ic_clear" 
+        app:showAsAction="always" 
+        android:title="@string/action_delete"/>
+
+</menu>
