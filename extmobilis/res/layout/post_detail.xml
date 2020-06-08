@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/solar_logo_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/nome_forum_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/post_list_forum_name_placeholder"
+            android:textColor="#0033CC"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/stock_person_description"
+            android:padding="2dp"
+            android:src="@drawable/stock_person" />
+
+        <TextView
+            android:id="@+id/user_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/avatar"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/avatar"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_body_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/avatar"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/avatar"
+            android:scrollbars="vertical" />
+
+        <ImageView
+            android:id="@+id/answer_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/answer_topic_description"
+            android:paddingRight="5dp"
+            android:src="@drawable/button_response_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

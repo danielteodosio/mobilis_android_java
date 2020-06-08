@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/solar_logo_bar" />
+
+    <RelativeLayout
+        android:id="@+id/middle_bar"
+        style="@style/SolarTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/top_bar" >
+
+        <ImageView
+            android:id="@+id/answer_topic_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/new_topic_image_description"
+            android:src="@drawable/button_message_selector" />
+
+        <TextView
+            android:id="@+id/nome_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/answer_topic_image"
+            android:textColor="@color/TextColor"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/SolarTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/middle_bar" >
+
+        <LinearLayout
+            android:id="@+id/highlight_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="9dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow_hightlight"
+            android:orientation="vertical" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/highlight_bar"
+            />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/empty_forum_message" />
+    </RelativeLayout>
+
+</RelativeLayout>
