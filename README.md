@@ -16,6 +16,6 @@ A presente ferramenta, Solar Mobilis faz parte de uma arquitetura de comunica√ß√
   
 ###Telas:
 
-![im0](https://github.com/danielteodosio/mobilis-android-java/blob/master/app-image/mob_im0.png?raw=true "im0")
+![im0](https://github.com/danielteodosio/mobilis_android_java/blob/master/app-image/mob_im0.png?raw=true "im0")
 
-![im1](https://github.com/danielteodosio/mobilis-android-java/blob/master/app-image/mob_im1.png?raw=true "im1")
+![im1](https://github.com/danielteodosio/mobilis_android_java/blob/master/app-image/mob_im1.png?raw=true "im1")
